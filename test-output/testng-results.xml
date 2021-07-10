@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="11" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-10T15:50:29 EET" name="Default suite" finished-at="2021-07-10T15:50:38 EET" duration-ms="9128">
+    <groups>
+      <group name="Addaccount">
+        <method signature="Admin_AddAccounts.AdminLogin()[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" name="AdminLogin" class="TTD_BankApp.Test.Admin_AddAccounts"/>
+        <method signature="Admin_AddAccounts.AddCustomer()[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" name="AddCustomer" class="TTD_BankApp.Test.Admin_AddAccounts"/>
+        <method signature="Admin_AddAccounts.EnterCustomerData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" name="EnterCustomerData" class="TTD_BankApp.Test.Admin_AddAccounts"/>
+      </group> <!-- Addaccount -->
+    </groups>
+    <test started-at="2021-07-10T15:50:29 EET" name="Default test" finished-at="2021-07-10T15:50:38 EET" duration-ms="9128">
+      <class name="TTD_BankApp.Test.Admin_Customers">
+        <test-method signature="FindCustomer()[pri:0, instance:TTD_BankApp.Test.Admin_Customers@206a70ef]" started-at="2021-07-10T15:50:37 EET" name="FindCustomer" finished-at="2021-07-10T15:50:38 EET" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindCustomer -->
+      </class> <!-- TTD_BankApp.Test.Admin_Customers -->
+      <class name="TTD_BankApp.Test.Admin_OpenAccount">
+        <test-method signature="OpenAccount(java.lang.String,java.lang.String)[pri:0, instance:TTD_BankApp.Test.Admin_OpenAccount@c730b35]" started-at="2021-07-10T15:50:36 EET" name="OpenAccount" data-provider="ExcelData" finished-at="2021-07-10T15:50:37 EET" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eslam Aboutaleb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dollar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAccount -->
+        <test-method signature="OpenAccount(java.lang.String,java.lang.String)[pri:0, instance:TTD_BankApp.Test.Admin_OpenAccount@c730b35]" started-at="2021-07-10T15:50:37 EET" name="OpenAccount" data-provider="ExcelData" finished-at="2021-07-10T15:50:37 EET" duration-ms="350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eslam Ehab]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rupee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAccount -->
+      </class> <!-- TTD_BankApp.Test.Admin_OpenAccount -->
+      <class name="TTD_BankApp.Test.Admin_AddAccounts">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" started-at="2021-07-10T15:50:24 EET" name="setup" finished-at="2021-07-10T15:50:29 EET" duration-ms="4683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" started-at="2021-07-10T15:50:29 EET" name="Setup" finished-at="2021-07-10T15:50:31 EET" duration-ms="2398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="AdminLogin()[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" started-at="2021-07-10T15:50:31 EET" name="AdminLogin" finished-at="2021-07-10T15:50:33 EET" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdminLogin -->
+        <test-method signature="AddCustomer()[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" started-at="2021-07-10T15:50:33 EET" name="AddCustomer" finished-at="2021-07-10T15:50:33 EET" depends-on-methods="TTD_BankApp.Test.Admin_AddAccounts.AdminLogin" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomer -->
+        <test-method signature="EnterCustomerData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" started-at="2021-07-10T15:50:33 EET" name="EnterCustomerData" data-provider="testData" finished-at="2021-07-10T15:50:35 EET" depends-on-methods="TTD_BankApp.Test.Admin_AddAccounts.AddCustomer" duration-ms="1113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eslam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ehab]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterCustomerData -->
+        <test-method signature="EnterCustomerData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" started-at="2021-07-10T15:50:35 EET" name="EnterCustomerData" data-provider="testData" finished-at="2021-07-10T15:50:35 EET" depends-on-methods="TTD_BankApp.Test.Admin_AddAccounts.AddCustomer" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eslam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aboutaleb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterCustomerData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TTD_BankApp.Test.Admin_AddAccounts@5b7a5baa]" started-at="2021-07-10T15:50:38 EET" name="tearDown" finished-at="2021-07-10T15:50:38 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TTD_BankApp.Test.Admin_AddAccounts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
